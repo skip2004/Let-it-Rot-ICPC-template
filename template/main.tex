@@ -1,0 +1,283 @@
+\documentclass{article}
+\usepackage{fancyhdr}
+\usepackage[graphicx]{realboxes}
+\usepackage[margin=1in]{geometry}
+\usepackage[Glenn]{fncychap}
+\usepackage{listings}
+\usepackage[toc]{multitoc}
+\usepackage{color}
+\usepackage{ctex}
+\usepackage{verbatim}
+
+\title{\fontsize{64.0pt}{\baselineskip}\selectfont Let it Rot}
+\date{}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+
+\lstset{frame=tb,
+  language=c++,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true
+  tabsize=4
+}
+
+
+\begin{document}
+
+\begin{titlepage}
+\maketitle
+
+\center \includegraphics[scale=0.60]{pics/letitrot.jpg}
+
+\thispagestyle{empty}
+\pagebreak
+\thispagestyle{empty}
+
+\tableofcontents
+\newpage
+\end{titlepage}
+	
+\section{图论}
+\pagestyle{fancy}
+    \lhead{\large 北京大学-摆烂人}
+    \chead{\Huge \thepage}
+    \rhead{\Huge \thepage}
+    \lfoot{\large PKU-Let it Rot}
+    \cfoot{\Huge \thepage}
+    \rfoot{\Huge \thepage}
+
+\subsection{欧拉回路} % !!! pb
+\lstinputlisting{graph/eulertour.cpp}
+\newpage
+
+\subsection{二分图匹配 | 最小边覆盖}
+\lstinputlisting{graph/bi_match.cpp}
+\newpage
+
+\subsection{网络最大流 | dinic}
+\lstinputlisting{graph/dinic.cpp}
+\newpage
+
+\subsection{最小费用流 | dijkstra}
+\lstinputlisting{graph/dijk-MCMF.cpp}
+\newpage
+
+\subsection{最小费用流 | spfa}
+\lstinputlisting{graph/spfa-MCMF.cpp}
+\newpage
+
+\subsection{二分图最大权匹配} % !!! pb
+\lstinputlisting{graph/KM.cpp}
+\newpage
+
+\subsection{最小树形图}
+抄罗大的，返回值是边的集合，如果没有最小树形图会返回 $-1$，可以修改建图。
+\lstinputlisting{graph/D-MST.cpp}
+\newpage
+
+\subsection{缩点 | kasaraju}
+时间复杂度 $O(\frac{n^2}{w})$, 可以对于边修改不多的图快速计算。
+\lstinputlisting{graph/kasaraju.cpp}
+\newpage
+
+\subsection{缩点 | Tarjan} % !!! pb
+\lstinputlisting{graph/tarjan.cpp}
+
+\subsection{缩点 | 点双} % !!! pb
+\lstinputlisting{graph/tarjan_vertex.cpp}
+
+\subsection{缩点 | 边双} % !!! pb
+\lstinputlisting{graph/tarjan_edge.cpp}
+
+\subsection{2-Sat}
+\lstinputlisting{graph/2-sat.cpp}
+\newpage
+
+
+\section{Math}	
+
+\subsection{万能欧几里得}
+\lstinputlisting{math/Euclid.cpp}
+\newpage
+
+\subsection{直线下点数|欧几里得}
+
+$n < 2 ^ {32}, 1 \leq m < 2 ^ {32}$
+
+$$
+result=\sum_{i=0}^{n-1} \lfloor \frac{ai + b}{m} \rfloor \pmod{2^{64}}
+$$
+
+\lstinputlisting{math/floor_sum.cpp}
+\newpage
+
+\subsection{扩展欧几里得}
+\lstinputlisting{math/exgcd.cpp}
+
+\subsection{扩展中国剩余定理}
+\lstinputlisting{math/exCRT.cpp}
+\newpage
+
+
+\subsection{Miller-Rabin}
+\lstinputlisting{math/Miller_Rabin.cpp}
+\newpage
+
+\subsection{Pollard-rho}
+\lstinputlisting{math/pollard_rho.cpp}
+\newpage
+
+\subsection{Fast Fourier Transform}
+\lstinputlisting{math/FFT.cpp}
+\newpage
+
+\subsection{Number Theoretic Transform}
+\lstinputlisting{math/NTT.cpp}
+\newpage
+
+\subsection{Generating function}
+\lstinputlisting{math/GF.cpp}
+\newpage
+
+\section{字符串}
+\subsection{后缀自动机 | SAM}
+需要两倍点数量。
+\lstinputlisting{string/SAM.cpp}
+\newpage
+
+\subsection{AC 自动机}
+\lstinputlisting{string/AC自动机.cpp}
+\newpage
+
+\subsection{回文自动机 | PAM}
+\lstinputlisting{string/PAM.cpp}
+\newpage
+
+\subsection{回文自动机 border 处理}
+\lstinputlisting{string/exPAM.cpp}
+\newpage
+
+\subsection{后缀数组 | SA}
+\lstinputlisting{string/SA.cpp}
+\newpage
+
+\subsection{exkmp | Zalgo}
+\lstinputlisting{string/Zalgo.cpp}
+
+\subsection{manacher}
+\lstinputlisting{string/manacher.cpp}
+\newpage
+
+\section{数据结构}
+\subsection{区间加区间求和 树状数组}
+\lstinputlisting{ds/ex-bit.cpp}
+\newpage
+
+\subsection{zkw 线段树}
+\lstinputlisting{ds/zkw-sgt.cpp}
+\newpage
+
+\subsection{Link Cut Tree}
+\lstinputlisting{ds/LCT.cpp}
+\newpage
+
+\subsection{FHQ Treap} % !!! pb
+\lstinputlisting{ds/fhq.cpp}
+\newpage
+
+\section{计算几何}
+\subsection{向量}
+\lstinputlisting{计算几何/向量.cpp}
+\newpage
+
+\subsection{直线半平面}
+\lstinputlisting{计算几何/直线半平面.cpp}
+\newpage
+
+\subsection{半平面交}
+\lstinputlisting{计算几何/半平面交.cpp}
+\newpage
+
+\subsection{线段}
+\lstinputlisting{计算几何/线段.cpp}
+\newpage
+
+\subsection{多边形}
+\lstinputlisting{计算几何/多边形.cpp}
+\newpage
+
+\subsection{Graham 凸包}
+没有判断左下角重点。
+结果为逆时针。
+
+\lstinputlisting{计算几何/凸包.cpp}
+\newpage
+\subsection{上凸壳}
+结果显然为顺时针。
+\lstinputlisting{计算几何/上凸壳.cpp}
+\newpage
+
+
+
+\section{不知道叫啥}
+\subsection{Pragma}
+\lstinputlisting{optimize_tricks/pragma.cpp}
+
+\subsection{Barrett}
+\lstinputlisting{optimize_tricks/Barrett.cpp}
+
+\subsection{LCS}
+\lstinputlisting{optimize_tricks/lcs.cpp}
+\newpage
+
+\subsection{日期公式}
+\lstinputlisting{optimize_tricks/zeller.cpp}
+
+\subsection{Xorshift}
+\lstinputlisting{optimize_tricks/xorshift.cpp}
+\newpage
+
+
+
+\section{配置}
+
+\subsection{vimrc}
+\lstinputlisting{config/.vimrc}
+\subsection{对拍}
+需要 chmod +x
+\lstinputlisting{config/1.sh}
+\subsection{bash 命令}
+\large \textbf{ulimit -s 1048576}
+
+\large \textbf{ulimit -m 1048576}
+\subsection{随机素数}
+920028467
+
+956083511
+
+939822971
+
+947440733
+
+920299999
+
+957673487
+
+963724301
+
+
+
+\end{document}

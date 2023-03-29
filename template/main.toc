@@ -1,0 +1,55 @@
+\contentsline {section}{\numberline {1}图论}{1}{}%
+\contentsline {subsection}{\numberline {1.1}欧拉回路}{1}{}%
+\contentsline {subsection}{\numberline {1.2}二分图匹配 | 最小边覆盖}{2}{}%
+\contentsline {subsection}{\numberline {1.3}网络最大流 | dinic}{5}{}%
+\contentsline {subsection}{\numberline {1.4}最小费用流 | dijkstra}{6}{}%
+\contentsline {subsection}{\numberline {1.5}最小费用流 | spfa}{8}{}%
+\contentsline {subsection}{\numberline {1.6}二分图最大权匹配}{9}{}%
+\contentsline {subsection}{\numberline {1.7}最小树形图}{10}{}%
+\contentsline {subsection}{\numberline {1.8}缩点 | kasaraju}{12}{}%
+\contentsline {subsection}{\numberline {1.9}缩点 | Tarjan}{13}{}%
+\contentsline {subsection}{\numberline {1.10}缩点 | 点双}{13}{}%
+\contentsline {subsection}{\numberline {1.11}缩点 | 边双}{13}{}%
+\contentsline {subsection}{\numberline {1.12}2-Sat}{14}{}%
+\contentsline {section}{\numberline {2}Math}{15}{}%
+\contentsline {subsection}{\numberline {2.1}万能欧几里得}{15}{}%
+\contentsline {subsection}{\numberline {2.2}直线下点数|欧几里得}{16}{}%
+\contentsline {subsection}{\numberline {2.3}扩展欧几里得}{17}{}%
+\contentsline {subsection}{\numberline {2.4}扩展中国剩余定理}{17}{}%
+\contentsline {subsection}{\numberline {2.5}Miller-Rabin}{18}{}%
+\contentsline {subsection}{\numberline {2.6}Pollard-rho}{19}{}%
+\contentsline {subsection}{\numberline {2.7}Fast Fourier Transform}{20}{}%
+\contentsline {subsection}{\numberline {2.8}Number Theoretic Transform}{21}{}%
+\contentsline {subsection}{\numberline {2.9}Generating function}{22}{}%
+\contentsline {section}{\numberline {3}字符串}{23}{}%
+\contentsline {subsection}{\numberline {3.1}后缀自动机 | SAM}{23}{}%
+\contentsline {subsection}{\numberline {3.2}AC 自动机}{24}{}%
+\contentsline {subsection}{\numberline {3.3}回文自动机 | PAM}{25}{}%
+\contentsline {subsection}{\numberline {3.4}回文自动机 border 处理}{26}{}%
+\contentsline {subsection}{\numberline {3.5}后缀数组 | SA}{28}{}%
+\contentsline {subsection}{\numberline {3.6}exkmp | Zalgo}{29}{}%
+\contentsline {subsection}{\numberline {3.7}manacher}{29}{}%
+\contentsline {section}{\numberline {4}数据结构}{30}{}%
+\contentsline {subsection}{\numberline {4.1}区间加区间求和 树状数组}{30}{}%
+\contentsline {subsection}{\numberline {4.2}zkw 线段树}{31}{}%
+\contentsline {subsection}{\numberline {4.3}Link Cut Tree}{32}{}%
+\contentsline {subsection}{\numberline {4.4}FHQ Treap}{33}{}%
+\contentsline {section}{\numberline {5}计算几何}{34}{}%
+\contentsline {subsection}{\numberline {5.1}向量}{34}{}%
+\contentsline {subsection}{\numberline {5.2}直线半平面}{36}{}%
+\contentsline {subsection}{\numberline {5.3}半平面交}{38}{}%
+\contentsline {subsection}{\numberline {5.4}线段}{39}{}%
+\contentsline {subsection}{\numberline {5.5}多边形}{40}{}%
+\contentsline {subsection}{\numberline {5.6}Graham 凸包}{41}{}%
+\contentsline {subsection}{\numberline {5.7}上凸壳}{42}{}%
+\contentsline {section}{\numberline {6}不知道叫啥}{43}{}%
+\contentsline {subsection}{\numberline {6.1}Pragma}{43}{}%
+\contentsline {subsection}{\numberline {6.2}Barrett}{43}{}%
+\contentsline {subsection}{\numberline {6.3}LCS}{43}{}%
+\contentsline {subsection}{\numberline {6.4}日期公式}{44}{}%
+\contentsline {subsection}{\numberline {6.5}Xorshift}{44}{}%
+\contentsline {section}{\numberline {7}配置}{45}{}%
+\contentsline {subsection}{\numberline {7.1}vimrc}{45}{}%
+\contentsline {subsection}{\numberline {7.2}对拍}{45}{}%
+\contentsline {subsection}{\numberline {7.3}bash 命令}{45}{}%
+\contentsline {subsection}{\numberline {7.4}随机素数}{45}{}%
